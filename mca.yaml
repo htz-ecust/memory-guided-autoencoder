@@ -1,0 +1,51 @@
+MODEL:
+  NAME: 'MCA'
+
+TRAIN:
+  batch_size: 9600
+  lr: 1e-3  
+  som_epoch: 500
+  mae_epoch: 200
+  pre_train_epoch: 0
+  device: 'gpu'
+
+SOM:
+  som_training: 'minisom'
+  weight_path: 'som_weight/' 
+  input_size: 6
+  row: 100
+  col: 100
+  lr: 0.3
+
+
+ENCODER:
+  num_node: [6,6,12]
+
+DECODER:
+  num_node: [12,6,6]
+
+MAE:
+  shrink: True
+  shrink_thres: 0.0
+  lamd_c: 0.001
+  lamd_off: 0.025
+  re_loss: 'mse'
+  num_me: 399
+  similarity: 'cos'
+
+
+DATA:
+  test_index: [4,5]
+  scale: True
+  SPCA: True
+  orth : False
+
+EVALUATION:
+  classifier: 'NB'
+  concate: 'res'
+  seen_clf: 'supervised'
+  metric: 'prc'
+  
+
+
+
