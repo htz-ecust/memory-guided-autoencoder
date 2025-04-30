@@ -16,7 +16,5 @@ python main.py
 ```
 
 # Thanks to the third party
-[SCE](https://github.com/htz-ecust/Semantic-consistent-Embedding)
-
 [FDAT](https://github.com/LiangjunFeng/Industrial_ZSL)
 
