@@ -1,5 +1,5 @@
-# Memory-consistent-Autoencoder
-The code of memory-guided autoencoder (MGR).
+# Memory-consistent-Reconstruction
+The code of memory-guided reconstruction (MGR).
 
 # Requirements
 ~~~
